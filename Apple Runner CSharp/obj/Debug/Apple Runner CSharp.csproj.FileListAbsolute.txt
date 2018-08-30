@@ -1,0 +1,10 @@
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\bin\Debug\Apple Runner CSharp.exe.config
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\bin\Debug\Apple Runner CSharp.exe
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\bin\Debug\Apple Runner CSharp.pdb
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple Runner CSharp.csprojAssemblyReference.cache
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple_Runner_CSharp.Apple_Runner.resources
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple_Runner_CSharp.Properties.Resources.resources
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple Runner CSharp.csproj.GenerateResource.cache
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple Runner CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple Runner CSharp.exe
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Debug\Apple Runner CSharp.pdb
