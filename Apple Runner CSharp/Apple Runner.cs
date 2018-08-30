@@ -132,8 +132,40 @@ namespace Apple_Runner_CSharp
                 // Use sound method
                 PlayAppleBumpSound();
                 // Move box out of range
-                PictureBox1.Top = 10000;
-
+                PictureBox1.Top = 10000000;
+                // Make box invisible
+                PictureBox1.Visible = false;
+            
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox2.Bounds))
+            {
+                // Set collision to true
+                collision = true;
+                // Increment Score
+                current_score = current_score + 100;
+                // Display score in Label
+                LabelScore.Text = current_score.ToString();
+                // Use sound method
+                PlayAppleBumpSound();
+                // Move box out of range
+                PictureBox2.Top = 10000000;
+                // Make box invisible
+                PictureBox2.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox3.Bounds))
+            {
+                // Set collision to true
+                collision = true;
+                // Increment Score
+                current_score = current_score + 100;
+                // Display score in Label
+                LabelScore.Text = current_score.ToString();
+                // Use sound method
+                PlayAppleBumpSound();
+                // Move box out of range
+                PictureBox3.Top = 10000000;
+                // Make box invisible
+                PictureBox3.Visible = false;
             }
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
