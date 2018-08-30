@@ -13,6 +13,7 @@ namespace Apple_Runner_CSharp
 {
     public partial class Apple_Runner : Form
     {
+        
         // Creates variables for use in moving sprite
         int ypos;
         int xpos;
@@ -23,6 +24,7 @@ namespace Apple_Runner_CSharp
         //  Used for golden apple collison which stops the game
         Boolean Golden_Apple;
         int timercountdown = 50;
+
         public Apple_Runner()
         {
             InitializeComponent();
@@ -58,7 +60,7 @@ namespace Apple_Runner_CSharp
         private void Move_Sprite_Left()
         {
             // Debug Show Xpos in box
-            LabelTimeLeft.Text = xpos.ToString();
+            // LabelTimeLeft.Text = xpos.ToString();
             // Sets new point
             PicSprite.Location = new Point(xpos, ypos);
             // Moves left by 3
@@ -68,12 +70,12 @@ namespace Apple_Runner_CSharp
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_left);
             // // Debug Show Xpos in box
-            LabelTimeLeft.Text = xpos.ToString();
+            //LabelTimeLeft.Text = xpos.ToString();
         }
         private void Move_Sprite_Right()
         {
             // Debug Show Xpos in box
-            LabelTimeLeft.Text = xpos.ToString();
+            // LabelTimeLeft.Text = xpos.ToString();
             // Sets new point
             PicSprite.Location = new Point(xpos, ypos);
             // Moves right by 3
@@ -82,8 +84,8 @@ namespace Apple_Runner_CSharp
             PicSprite.Location = new Point(xpos, ypos);
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_right);
-            // // Debug Show Xpos in box
-            LabelTimeLeft.Text = xpos.ToString();
+            // Debug Show Xpos in box
+            // LabelTimeLeft.Text = xpos.ToString();
         }
         private void Move_Sprite_Up()
         {
@@ -97,7 +99,7 @@ namespace Apple_Runner_CSharp
             PicSprite.Location = new Point(xpos, ypos);
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_up);
-            // // Debug Show Xpos in box
+            // Debug Show Xpos in box
             // LabelTimeLeft.Text = ypos.ToString();
         }
         private void Move_Sprite_Down()
@@ -112,13 +114,27 @@ namespace Apple_Runner_CSharp
             PicSprite.Location = new Point(xpos, ypos);
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_down);
-            // // Debug Show Xpos in box
-            //  LabelTimeLeft.Text = ypos.ToString();
+            // Debug Show Xpos in box
+            // LabelTimeLeft.Text = ypos.ToString();
         }
 
 
         public void TextBoxKeyInput_KeyDown(object sender, KeyEventArgs e)
         {
+            if (PicSprite.Bounds.IntersectsWith(PictureBox1.Bounds))
+            {
+                // Set collision to true
+                collision = true;
+                // Increment Score
+                current_score = current_score + 100;
+                // Display score in Label
+                LabelScore.Text = current_score.ToString();
+                // Use sound method
+                PlayAppleBumpSound();
+                // Move box out of range
+                PictureBox1.Top = 10000;
+
+            }
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
             {
@@ -177,6 +193,5 @@ namespace Apple_Runner_CSharp
             Application.Exit();
         }
     }
- 
-    
+
 }

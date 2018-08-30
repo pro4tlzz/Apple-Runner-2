@@ -353,7 +353,7 @@
             // 
             // LabelScoreTitle
             // 
-            this.LabelScoreTitle.BackColor = System.Drawing.Color.White;
+            this.LabelScoreTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.LabelScoreTitle.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScoreTitle.Location = new System.Drawing.Point(372, 617);
             this.LabelScoreTitle.Name = "LabelScoreTitle";
