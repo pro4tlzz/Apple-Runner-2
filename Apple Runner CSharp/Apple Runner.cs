@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Media;
 
@@ -13,7 +14,7 @@ namespace Apple_Runner_CSharp
 {
     public partial class Apple_Runner : Form
     {
-        
+
         // Creates variables for use in moving sprite
         int ypos;
         int xpos;
@@ -129,7 +130,7 @@ namespace Apple_Runner_CSharp
                 PictureBox1.Top = 10000000;
                 // Make box invisible
                 PictureBox1.Visible = false;
-            
+
             }
             if (PicSprite.Bounds.IntersectsWith(PictureBox2.Bounds))
             {
@@ -142,6 +143,60 @@ namespace Apple_Runner_CSharp
                 isAppleHit();
                 PictureBox3.Top = 10000000;
                 PictureBox3.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox4.Bounds))
+            {
+                isAppleHit();
+                PictureBox4.Top = 10000000;
+                PictureBox4.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox5.Bounds))
+            {
+                isAppleHit();
+                PictureBox5.Top = 10000000;
+                PictureBox5.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox6.Bounds))
+            {
+                isAppleHit();
+                PictureBox6.Top = 10000000;
+                PictureBox6.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox7.Bounds))
+            {
+                isAppleHit();
+                PictureBox7.Top = 10000000;
+                PictureBox7.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox8.Bounds))
+            {
+                isAppleHit();
+                PictureBox8.Top = 10000000;
+                PictureBox8.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox9.Bounds))
+            {
+                isAppleHit();
+                PictureBox9.Top = 10000000;
+                PictureBox9.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox10.Bounds))
+            {
+                isAppleHit();
+                PictureBox10.Top = 10000000;
+                PictureBox10.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox11.Bounds))
+            {
+                isAppleHit();
+                PictureBox11.Top = 10000000;
+                PictureBox11.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox12.Bounds))
+            {
+                isAppleHit();
+                PictureBox12.Top = 10000000;
+                PictureBox12.Visible = false;
             }
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
@@ -160,6 +215,26 @@ namespace Apple_Runner_CSharp
             {
                 Move_Sprite_Down();
             }
+            if (e.KeyCode == Keys.W)
+            {
+                Move_Sprite_Up();
+            }
+            if (e.KeyCode == Keys.A)
+            {
+                Move_Sprite_Left();
+
+            }
+            if (e.KeyCode == Keys.S)
+            {
+                Move_Sprite_Down();
+            }
+            if (e.KeyCode == Keys.D)
+            {
+                Move_Sprite_Right();
+
+            }
+            // Handle textbox cursor
+            HideCaret(TextBoxKeyInput.Handle);
         }
 
         private void TimerRemaining_Tick(object sender, EventArgs e)
@@ -211,6 +286,15 @@ namespace Apple_Runner_CSharp
             // Use sound method
             PlayAppleBumpSound();
         }
+        // Used for hiding cursor in textbox
+        [DllImport("user32.dll")]
+        static extern bool HideCaret(IntPtr hWnd);
+        
     }
 
 }
+       
+
+   
+
+
