@@ -21,7 +21,7 @@ namespace Apple_Runner_CSharp
         // Creates variable for holding score
         int current_score = 0;
         //  Used for golden apple collison which stops the game
-        Boolean golder_apple;
+        Boolean Golden_Apple;
         int timercountdown = 50;
         public Apple_Runner()
         {
@@ -87,8 +87,8 @@ namespace Apple_Runner_CSharp
         }
         private void Move_Sprite_Up()
         {
-            // Debug Show Xpos in box
-            LabelTimeLeft.Text = ypos.ToString();
+            // Debug Show Ypos in box
+            // LabelTimeLeft.Text = ypos.ToString();
             // Sets new point
             PicSprite.Location = new Point(xpos, ypos);
             // Moves up by 3
@@ -98,12 +98,12 @@ namespace Apple_Runner_CSharp
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_up);
             // // Debug Show Xpos in box
-            LabelTimeLeft.Text = ypos.ToString();
+            // LabelTimeLeft.Text = ypos.ToString();
         }
         private void Move_Sprite_Down()
         {
-            // Debug Show Xpos in box
-            LabelTimeLeft.Text = ypos.ToString();
+            // Debug Show Ypos in box
+            // LabelTimeLeft.Text = ypos.ToString();
             // Sets new point
             PicSprite.Location = new Point(xpos, ypos);
             // Moves down by 3
@@ -113,7 +113,7 @@ namespace Apple_Runner_CSharp
             // Loads left sprite image
             PicSprite.Image = (Apple_Runner_CSharp.Properties.Resources.man_going_down);
             // // Debug Show Xpos in box
-            LabelTimeLeft.Text = ypos.ToString();
+            //  LabelTimeLeft.Text = ypos.ToString();
         }
 
 
@@ -136,6 +136,38 @@ namespace Apple_Runner_CSharp
             {
                 Move_Sprite_Down();
             }
+        }
+
+        private void TimerRemaining_Tick(object sender, EventArgs e)
+        {
+            // When time is over the timer is disabled and message is displayed
+            TimerRemaining.Enabled = false;
+
+            MessageBox.Show("Out of Time");
+          
+        }
+
+        private void TimerDown_Tick(object sender, EventArgs e)
+        {
+            //  'Uses TimerCountDown variable to minus 1 at a rate of every second to give the illusion of a countdown, Default Value is 50 in the form which means it counts down from 50
+            timercountdown = timercountdown - 1;
+            //  'Outputs Timer Countdown to Label
+            LabelTimeLeft.Text = timercountdown.ToString();
+            //'Stops timerdown when countdown reaches 0 and disables it
+            if (timercountdown == 0)
+                {
+                TimerDown.Enabled = false;
+                TimerDown.Stop();
+                }
+            
+            // 'Stops timerdown when Golden_Apple = True, also disables timer
+            if (Golden_Apple == true)
+                {
+                TimerDown.Enabled = false;
+                TimerDown.Stop();
+                }
+           
+        
         }
     }
 

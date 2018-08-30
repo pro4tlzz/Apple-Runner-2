@@ -298,6 +298,7 @@
             // 
             this.TimerRemaining.Enabled = true;
             this.TimerRemaining.Interval = 50000;
+            this.TimerRemaining.Tick += new System.EventHandler(this.TimerRemaining_Tick);
             // 
             // LabelTimeLeft
             // 
@@ -381,6 +382,7 @@
             // 
             this.TimerDown.Enabled = true;
             this.TimerDown.Interval = 1000;
+            this.TimerDown.Tick += new System.EventHandler(this.TimerDown_Tick);
             // 
             // PictureBox53
             // 
