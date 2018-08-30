@@ -222,7 +222,7 @@
             this.TextBoxKeyInput.Name = "TextBoxKeyInput";
             this.TextBoxKeyInput.Size = new System.Drawing.Size(100, 20);
             this.TextBoxKeyInput.TabIndex = 106;
-            this.TextBoxKeyInput.Visible = false;
+            this.TextBoxKeyInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyInput_KeyDown);
             // 
             // PictureBox64
             // 
@@ -548,7 +548,6 @@
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(628, 611);
             this.Panel1.TabIndex = 104;
-            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint_1);
             // 
             // PictureBox48
             // 
