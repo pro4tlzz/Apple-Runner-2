@@ -1314,6 +1314,7 @@
             this.MinimumSize = new System.Drawing.Size(650, 708);
             this.Name = "Apple_Runner";
             this.Text = "Apple Runner";
+            this.Load += new System.EventHandler(this.Apple_Runner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox62)).EndInit();

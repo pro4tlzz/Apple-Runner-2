@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Apple Runner CSharp/v15/Server/sqlite3
+/.vs/Apple Runner CSharp/v15

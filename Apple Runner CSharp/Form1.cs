@@ -556,5 +556,10 @@ namespace Apple_Runner_CSharp
         {
 
         }
+
+        private void Apple_Runner_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
