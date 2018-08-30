@@ -25,7 +25,9 @@ namespace Apple_Runner_CSharp
         //  Used for golden apple collison which stops the game
         Boolean Golden_Apple;
         int timercountdown = 50;
-
+        // Used for hiding cursor in textbox
+        [DllImport("user32.dll")]
+        static extern bool HideCaret(IntPtr hWnd);
         public Apple_Runner()
         {
             InitializeComponent();
@@ -286,9 +288,7 @@ namespace Apple_Runner_CSharp
             // Use sound method
             PlayAppleBumpSound();
         }
-        // Used for hiding cursor in textbox
-        [DllImport("user32.dll")]
-        static extern bool HideCaret(IntPtr hWnd);
+        
         
     }
 

@@ -221,11 +221,10 @@
             this.TextBoxKeyInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.TextBoxKeyInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxKeyInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.TextBoxKeyInput.Location = new System.Drawing.Point(6, 640);
+            this.TextBoxKeyInput.Location = new System.Drawing.Point(1000, 1000);
             this.TextBoxKeyInput.Name = "TextBoxKeyInput";
             this.TextBoxKeyInput.Size = new System.Drawing.Size(100, 13);
             this.TextBoxKeyInput.TabIndex = 106;
-        
             this.TextBoxKeyInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyInput_KeyDown);
             // 
             // PictureBox64
