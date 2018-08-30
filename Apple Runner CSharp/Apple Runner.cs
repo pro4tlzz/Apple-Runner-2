@@ -43,8 +43,8 @@ namespace Apple_Runner_CSharp
             // Play
             audio.Play();
             Convert.ToInt32(xpos);
-           
-          
+
+
 
         }
         private void PlayGoldenAppleSound()
@@ -53,7 +53,7 @@ namespace Apple_Runner_CSharp
             SoundPlayer audio = new SoundPlayer(Apple_Runner_CSharp.Properties.Resources.mario_level_complete);
             // Play
             audio.Play();
-            
+
         }
         private void Move_Sprite_Left()
         {
@@ -120,7 +120,7 @@ namespace Apple_Runner_CSharp
         public void TextBoxKeyInput_KeyDown(object sender, KeyEventArgs e)
         {
             // Call methods for moving sprites
-           if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
                 Move_Sprite_Left();
             }
@@ -140,37 +140,43 @@ namespace Apple_Runner_CSharp
 
         private void TimerRemaining_Tick(object sender, EventArgs e)
         {
-            // When time is over the timer is disabled and message is displayed
+            // When time is over the timer is disabled, message is displayed and app exits
             TimerRemaining.Enabled = false;
-
             MessageBox.Show("Out of Time");
-          
+            Application.Exit();
+
         }
 
         private void TimerDown_Tick(object sender, EventArgs e)
         {
+
             //  'Uses TimerCountDown variable to minus 1 at a rate of every second to give the illusion of a countdown, Default Value is 50 in the form which means it counts down from 50
             timercountdown = timercountdown - 1;
             //  'Outputs Timer Countdown to Label
             LabelTimeLeft.Text = timercountdown.ToString();
             //'Stops timerdown when countdown reaches 0 and disables it
             if (timercountdown == 0)
-                {
+            {
                 TimerDown.Enabled = false;
                 TimerDown.Stop();
-                }
-            
+            }
+
             // 'Stops timerdown when Golden_Apple = True, also disables timer
             if (Golden_Apple == true)
-                {
+            {
                 TimerDown.Enabled = false;
                 TimerDown.Stop();
-                }
-           
-        
+            }
+
+
+        }
+
+        private void Apple_Runner_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // App Exit on close handle
+            Application.Exit();
         }
     }
-
  
     
 }
