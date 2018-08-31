@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Media;
@@ -14,7 +8,6 @@ namespace Apple_Runner_CSharp
 {
     public partial class Apple_Runner : Form
     {
-
         // Creates variables for use in moving sprite
         int ypos;
         int xpos;
@@ -28,6 +21,7 @@ namespace Apple_Runner_CSharp
         // Used for hiding cursor in textbox
         [DllImport("user32.dll")]
         static extern bool HideCaret(IntPtr hWnd);
+
         public Apple_Runner()
         {
             InitializeComponent();
@@ -38,8 +32,6 @@ namespace Apple_Runner_CSharp
             // Reports X and Y details
             xpos = PicSprite.Location.X;
             ypos = PicSprite.Location.Y;
-
-
         }
         private void PlayAppleBumpSound()
         {
@@ -48,9 +40,6 @@ namespace Apple_Runner_CSharp
             // Play
             audio.Play();
             Convert.ToInt32(xpos);
-
-
-
         }
         private void PlayGoldenAppleSound()
         {
@@ -58,7 +47,6 @@ namespace Apple_Runner_CSharp
             SoundPlayer audio = new SoundPlayer(Apple_Runner_CSharp.Properties.Resources.mario_level_complete);
             // Play
             audio.Play();
-
         }
         private void Move_Sprite_Left()
         {
@@ -125,14 +113,13 @@ namespace Apple_Runner_CSharp
         public void TextBoxKeyInput_KeyDown(object sender, KeyEventArgs e)
         {
             if (PicSprite.Bounds.IntersectsWith(PictureBox1.Bounds))
-            {
+            {                
                 // Run method for general purposes
                 isAppleHit();
                 // Move box out of range
                 PictureBox1.Top = 10000000;
                 // Make box invisible
                 PictureBox1.Visible = false;
-
             }
             if (PicSprite.Bounds.IntersectsWith(PictureBox2.Bounds))
             {
@@ -200,6 +187,324 @@ namespace Apple_Runner_CSharp
                 PictureBox12.Top = 10000000;
                 PictureBox12.Visible = false;
             }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox13.Bounds))
+            {
+                isAppleHit();
+                PictureBox13.Top = 10000000;
+                PictureBox13.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox13.Bounds))
+            {
+                isAppleHit();
+                PictureBox13.Top = 10000000;
+                PictureBox13.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox14.Bounds))
+            {
+                isAppleHit();
+                PictureBox14.Top = 10000000;
+                PictureBox14.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox15.Bounds))
+            {
+                isAppleHit();
+                PictureBox15.Top = 10000000;
+                PictureBox15.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox16.Bounds))
+            {
+                isAppleHit();
+                PictureBox16.Top = 10000000;
+                PictureBox16.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox17.Bounds))
+            {
+                isAppleHit();
+                PictureBox17.Top = 10000000;
+                PictureBox17.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox18.Bounds))
+            {
+                isAppleHit();
+                PictureBox18.Top = 10000000;
+                PictureBox18.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox19.Bounds))
+            {
+                isAppleHit();
+                PictureBox19.Top = 10000000;
+                PictureBox19.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox20.Bounds))
+            {
+                isAppleHit();
+                PictureBox20.Top = 10000000;
+                PictureBox20.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox21.Bounds))
+            {
+                isAppleHit();
+                PictureBox21.Top = 10000000;
+                PictureBox21.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox22.Bounds))
+            {
+                isAppleHit();
+                PictureBox22.Top = 10000000;
+                PictureBox22.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox23.Bounds))
+            {
+                isAppleHit();
+                PictureBox23.Top = 10000000;
+                PictureBox23.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox24.Bounds))
+            {
+                isAppleHit();
+                PictureBox24.Top = 10000000;
+                PictureBox24.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox25.Bounds))
+            {
+                isAppleHit();
+                PictureBox25.Top = 10000000;
+                PictureBox25.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox26.Bounds))
+            {
+                isAppleHit();
+                PictureBox26.Top = 10000000;
+                PictureBox26.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox27.Bounds))
+            {
+                isAppleHit();
+                PictureBox27.Top = 10000000;
+                PictureBox27.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox28.Bounds))
+            {
+                isAppleHit();
+                PictureBox28.Top = 10000000;
+                PictureBox28.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox29.Bounds))
+            {
+                isAppleHit();
+                PictureBox29.Top = 10000000;
+                PictureBox29.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox30.Bounds))
+            {
+                isAppleHit();
+                PictureBox30.Top = 10000000;
+                PictureBox30.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox31.Bounds))
+            {
+                isAppleHit();
+                PictureBox31.Top = 10000000;
+                PictureBox31.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox32.Bounds))
+            {
+                isAppleHit();
+                PictureBox32.Top = 10000000;
+                PictureBox32.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox33.Bounds))
+            {
+                isAppleHit();
+                PictureBox33.Top = 10000000;
+                PictureBox33.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox34.Bounds))
+            {
+                isAppleHit();
+                PictureBox34.Top = 10000000;
+                PictureBox34.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox35.Bounds))
+            {
+                isAppleHit();
+                PictureBox35.Top = 10000000;
+                PictureBox35.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox36.Bounds))
+            {
+                isAppleHit();
+                PictureBox36.Top = 10000000;
+                PictureBox36.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox37.Bounds))
+            {
+                isAppleHit();
+                PictureBox37.Top = 10000000;
+                PictureBox37.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox38.Bounds))
+            {
+                isAppleHit();
+                PictureBox38.Top = 10000000;
+                PictureBox38.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox39.Bounds))
+            {
+                isAppleHit();
+                PictureBox39.Top = 10000000;
+                PictureBox39.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox40.Bounds))
+            {
+                isAppleHit();
+                PictureBox40.Top = 10000000;
+                PictureBox40.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox41.Bounds))
+            {
+                isAppleHit();
+                PictureBox41.Top = 10000000;
+                PictureBox41.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox42.Bounds))
+            {
+                isAppleHit();
+                PictureBox42.Top = 10000000;
+                PictureBox42.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox43.Bounds))
+            {
+                isAppleHit();
+                PictureBox43.Top = 10000000;
+                PictureBox43.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox44.Bounds))
+            {
+                isAppleHit();
+                PictureBox44.Top = 10000000;
+                PictureBox44.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox45.Bounds))
+            {
+                isAppleHit();
+                PictureBox45.Top = 10000000;
+                PictureBox45.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox46.Bounds))
+            {
+                isAppleHit();
+                PictureBox46.Top = 10000000;
+                PictureBox46.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox47.Bounds))
+            {
+                isAppleHit();
+                PictureBox47.Top = 10000000;
+                PictureBox47.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox48.Bounds))
+            {
+                isAppleHit();
+                PictureBox48.Top = 10000000;
+                PictureBox48.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox49.Bounds))
+            {
+                isAppleHit();
+                PictureBox49.Top = 10000000;
+                PictureBox49.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox50.Bounds))
+            {
+                isAppleHit();
+                PictureBox50.Top = 10000000;
+                PictureBox50.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox51.Bounds))
+            {
+                isAppleHit();
+                PictureBox51.Top = 10000000;
+                PictureBox51.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox52.Bounds))
+            {
+                isAppleHit();
+                PictureBox52.Top = 10000000;
+                PictureBox52.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox53.Bounds))
+            {
+                isAppleHit();
+                PictureBox53.Top = 10000000;
+                PictureBox53.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox54.Bounds))
+            {
+                isAppleHit();
+                PictureBox54.Top = 10000000;
+                PictureBox54.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox55.Bounds))
+            {
+                isAppleHit();
+                PictureBox55.Top = 10000000;
+                PictureBox55.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox56.Bounds))
+            {
+                isAppleHit();
+                PictureBox56.Top = 10000000;
+                PictureBox56.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox57.Bounds))
+            {
+                isAppleHit();
+                PictureBox57.Top = 10000000;
+                PictureBox57.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox58.Bounds))
+            {
+                isAppleHit();
+                PictureBox58.Top = 10000000;
+                PictureBox58.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox59.Bounds))
+            {
+                isAppleHit();
+                PictureBox59.Top = 10000000;
+                PictureBox59.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox60.Bounds))
+            {
+                isAppleHit();
+                PictureBox60.Top = 10000000;
+                PictureBox60.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox61.Bounds))
+            {
+                isAppleHit();
+                PictureBox61.Top = 10000000;
+                PictureBox61.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox62.Bounds))
+            {
+                isAppleHit();
+                PictureBox62.Top = 10000000;
+                PictureBox62.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox63.Bounds))
+            {
+                isAppleHit();
+                PictureBox63.Top = 10000000;
+                PictureBox63.Visible = false;
+            }
+            if (PicSprite.Bounds.IntersectsWith(PictureBox64.Bounds))
+            {
+                // Call Golden Apple Method
+                IsGolden_Apple_Hit();
+            }
+       
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
             {
@@ -245,12 +550,10 @@ namespace Apple_Runner_CSharp
             TimerRemaining.Enabled = false;
             MessageBox.Show("Out of Time");
             Application.Exit();
-
         }
 
         private void TimerDown_Tick(object sender, EventArgs e)
         {
-
             //  'Uses TimerCountDown variable to minus 1 at a rate of every second to give the illusion of a countdown, Default Value is 50 in the form which means it counts down from 50
             timercountdown = timercountdown - 1;
             //  'Outputs Timer Countdown to Label
@@ -268,8 +571,6 @@ namespace Apple_Runner_CSharp
                 TimerDown.Enabled = false;
                 TimerDown.Stop();
             }
-
-
         }
 
         private void Apple_Runner_FormClosing(object sender, FormClosingEventArgs e)
@@ -285,10 +586,33 @@ namespace Apple_Runner_CSharp
             current_score = current_score + 100;
             // Display score in Label
             LabelScore.Text = current_score.ToString();
+            // Set collision to false
+            collision = false;
             // Use sound method
             PlayAppleBumpSound();
         }
-        
+        private void IsGolden_Apple_Hit()
+        {
+            // Set collision to true
+            collision = true;
+            // Set Golden Apple True
+            Golden_Apple = true;
+            // Increment Score
+            current_score = current_score + 1000;
+            // Display score in Label
+            LabelScore.Text = current_score.ToString();
+            // Set collision to false
+            collision = false;
+            // Play end of game sound
+            PlayGoldenAppleSound();
+            // Stop Timers
+            TimerDown.Stop();
+            TimerRemaining.Stop();
+            // Show message
+            MessageBox.Show("Well done you completed the game and scored " + current_score.ToString());
+            // Exit
+            Application.Exit();
+        }
         
     }
 

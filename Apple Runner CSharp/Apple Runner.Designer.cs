@@ -299,7 +299,6 @@
             // 
             // TimerRemaining
             // 
-            this.TimerRemaining.Enabled = true;
             this.TimerRemaining.Interval = 50000;
             this.TimerRemaining.Tick += new System.EventHandler(this.TimerRemaining_Tick);
             // 
@@ -383,7 +382,6 @@
             // 
             // TimerDown
             // 
-            this.TimerDown.Enabled = true;
             this.TimerDown.Interval = 1000;
             this.TimerDown.Tick += new System.EventHandler(this.TimerDown_Tick);
             // 
@@ -449,7 +447,7 @@
             // 
             // Panel1
             // 
-            this.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.Panel1.BackColor = System.Drawing.Color.Silver;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Panel1.Controls.Add(this.PictureBox64);
             this.Panel1.Controls.Add(this.PictureBox63);
