@@ -757,6 +757,8 @@ namespace Apple_Runner_CSharp
             Score_Save.FileName = "Score";
             // Filter extension
             Score_Save.Filter = "Text File |*.txt";
+            // Dialog Title
+            Score_Save.Title = "Save score file";
             // Loop to make sure user saves file
             if (Score_Save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
