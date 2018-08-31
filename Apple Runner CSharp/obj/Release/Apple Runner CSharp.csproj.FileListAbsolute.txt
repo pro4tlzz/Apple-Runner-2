@@ -8,3 +8,4 @@ C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Release\
 C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Release\Apple Runner CSharp.csproj.CoreCompileInputs.cache
 C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Release\Apple Runner CSharp.exe
 C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Release\Apple Runner CSharp.pdb
+C:\Users\Bilal\source\repos\Apple Runner CSharp\Apple Runner CSharp\obj\Release\Apple Runner CSharp.csprojAssemblyReference.cache

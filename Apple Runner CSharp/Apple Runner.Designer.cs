@@ -1029,7 +1029,7 @@
             // 
             this.PicSprite.BackColor = System.Drawing.SystemColors.Control;
             this.PicSprite.Image = ((System.Drawing.Image)(resources.GetObject("PicSprite.Image")));
-            this.PicSprite.Location = new System.Drawing.Point(458, 535);
+            this.PicSprite.Location = new System.Drawing.Point(243, 535);
             this.PicSprite.Name = "PicSprite";
             this.PicSprite.Size = new System.Drawing.Size(35, 37);
             this.PicSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
