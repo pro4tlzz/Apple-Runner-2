@@ -756,6 +756,10 @@ namespace Apple_Runner_CSharp
             // Loop to make sure user saves file
             if (Score_Save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                // Write File Name
+                Score_Save.FileName = "Score";
+                // Filter extension
+                Score_Save.Filter = "Text files (*.txt)|*.txt";
                 // Set Path
                 string path = Score_Save.FileName;
                 // New BinaryWriter
@@ -789,7 +793,7 @@ namespace Apple_Runner_CSharp
         }
         private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            saveFileDialog1.ShowDialog();
+          
         }
        
        
