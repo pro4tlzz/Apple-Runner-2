@@ -513,128 +513,135 @@ namespace Apple_Runner_CSharp
             {
                 IsLabelHit();
             }
+            if (PicSprite.Bounds.IntersectsWith(Label2.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label3.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label4.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label5.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label6.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label7.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label8.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label9.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label10.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label11.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label12.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label13.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label14.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label15.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label16.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label17.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label18.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label19.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label20.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label21.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label22.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label23.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label24.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label25.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label26.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label27.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label28.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label29.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label30.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label31.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label32.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label35.Bounds))
+            {
+                IsLabelHit();
+            }
 
-
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
-            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
-            {
-                IsLabelHit();
-            }
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
             {
@@ -750,6 +757,7 @@ namespace Apple_Runner_CSharp
             TimerRemaining.Stop();
             // User Message
             MessageBox.Show("You hit a barrier and lost");
+            // Exit App
             Application.Exit();
         }
         

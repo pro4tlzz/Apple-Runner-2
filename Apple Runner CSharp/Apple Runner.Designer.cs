@@ -299,6 +299,7 @@
             // 
             // TimerRemaining
             // 
+            this.TimerRemaining.Enabled = true;
             this.TimerRemaining.Interval = 50000;
             this.TimerRemaining.Tick += new System.EventHandler(this.TimerRemaining_Tick);
             // 
@@ -382,6 +383,7 @@
             // 
             // TimerDown
             // 
+            this.TimerDown.Enabled = true;
             this.TimerDown.Interval = 1000;
             this.TimerDown.Tick += new System.EventHandler(this.TimerDown_Tick);
             // 
@@ -1026,7 +1028,7 @@
             // 
             this.PicSprite.BackColor = System.Drawing.SystemColors.Control;
             this.PicSprite.Image = ((System.Drawing.Image)(resources.GetObject("PicSprite.Image")));
-            this.PicSprite.Location = new System.Drawing.Point(243, 535);
+            this.PicSprite.Location = new System.Drawing.Point(533, 471);
             this.PicSprite.Name = "PicSprite";
             this.PicSprite.Size = new System.Drawing.Size(35, 37);
             this.PicSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
