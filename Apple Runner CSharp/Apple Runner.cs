@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using System.Data;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace Apple_Runner_CSharp
 {
@@ -11,6 +13,8 @@ namespace Apple_Runner_CSharp
         // Creates variables for use in moving sprite
         int ypos;
         int xpos;
+        // Create variable for time spent
+        int time_Spent = 0;
         // Creates variable for use in detecting collision
         Boolean collision;
         // Creates variable for holding score
@@ -747,6 +751,20 @@ namespace Apple_Runner_CSharp
             TimerRemaining.Stop();
             // Show message
             MessageBox.Show("Well done you completed the game and scored " + current_score.ToString());
+            // New instance of save file
+            SaveFileDialog Score_Save = new SaveFileDialog();
+            // Loop to make sure user saves file
+            if (Score_Save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // Set Path
+                string path = Score_Save.FileName;
+                // New BinaryWriter
+                StreamWriter BW = new StreamWriter(File.Create(path));
+                // Write Line and values
+                BW.Write("User scored {0} points in {1} seconds on Apple Runner", current_score, CalculateTimeElapsed(userTime:time_Spent));
+                // Dispose
+                BW.Dispose();
+            }
             // Exit
             Application.Exit();
         }
@@ -760,7 +778,21 @@ namespace Apple_Runner_CSharp
             // Exit App
             Application.Exit();
         }
-        
+        public int CalculateTimeElapsed(int userTime)
+        {
+            // Set variable to hold conversion
+            int x = Convert.ToInt32(LabelTimeLeft.Text);
+            // Calculate time elapsed by subtracting time elapsed from time given
+            userTime = 50 - x;
+            // Return Value
+            return userTime;
+        }
+        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+        }
+       
+       
     }
 
 }

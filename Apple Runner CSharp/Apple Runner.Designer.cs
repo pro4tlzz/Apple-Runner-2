@@ -137,6 +137,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.FinishLabel = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox62)).BeginInit();
@@ -1028,7 +1029,7 @@
             // 
             this.PicSprite.BackColor = System.Drawing.SystemColors.Control;
             this.PicSprite.Image = ((System.Drawing.Image)(resources.GetObject("PicSprite.Image")));
-            this.PicSprite.Location = new System.Drawing.Point(533, 471);
+            this.PicSprite.Location = new System.Drawing.Point(458, 535);
             this.PicSprite.Name = "PicSprite";
             this.PicSprite.Size = new System.Drawing.Size(35, 37);
             this.PicSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1299,6 +1300,14 @@
             this.FinishLabel.Size = new System.Drawing.Size(90, 61);
             this.FinishLabel.TabIndex = 99;
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.CheckFileExists = true;
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.FileName = "Score";
+            this.saveFileDialog1.Title = "Score File Save";
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
             // Apple_Runner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1500,6 +1509,7 @@
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Label FinishLabel;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
