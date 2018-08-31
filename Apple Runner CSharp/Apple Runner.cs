@@ -504,7 +504,137 @@ namespace Apple_Runner_CSharp
                 // Call Golden Apple Method
                 IsGolden_Apple_Hit();
             }
-       
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                // Call Label Method
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+
+
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
+            if (PicSprite.Bounds.IntersectsWith(Label1.Bounds))
+            {
+                IsLabelHit();
+            }
             // Call methods for moving sprites
             if (e.KeyCode == Keys.Left)
             {
@@ -611,6 +741,15 @@ namespace Apple_Runner_CSharp
             // Show message
             MessageBox.Show("Well done you completed the game and scored " + current_score.ToString());
             // Exit
+            Application.Exit();
+        }
+        private void IsLabelHit()
+        {
+            //Stop Timers
+            TimerDown.Stop();
+            TimerRemaining.Stop();
+            // User Message
+            MessageBox.Show("You hit a barrier and lost");
             Application.Exit();
         }
         
